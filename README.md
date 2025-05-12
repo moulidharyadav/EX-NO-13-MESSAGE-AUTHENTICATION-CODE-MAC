@@ -17,7 +17,6 @@ To implement MESSAGE AUTHENTICATION CODE(MAC)
      \text{MAC}(M, K) = H(K || M)
      \]
      where \( || \) denotes concatenation of \( K \) and \( M \).
-
 4. Verification:
    - The recipient, who knows the secret key \( K \), computes the MAC using the received message \( M \) and the same hash function.
    - The recipient compares the computed MAC with the received MAC. If they match, the message is authentic and unchanged.
